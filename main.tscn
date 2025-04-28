@@ -1,7 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://cji844qsvpuru"]
+[gd_scene load_steps=4 format=3 uid="uid://cji844qsvpuru"]
 
 [ext_resource type="PackedScene" uid="uid://dohi45ewhto6y" path="res://field.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://ca6hn7a80iyh7" path="res://top_player.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cseurjf7d0qyi" path="res://bottom_player.tscn" id="3_1bvp3"]
 
 [node name="Main" type="Node2D"]
 
 [node name="Field" parent="." instance=ExtResource("1_ig7tw")]
+
+[node name="Top Player" parent="." instance=ExtResource("2_h2yge")]
+position = Vector2(30, -2227)
+
+[node name="Bottom Player" parent="." instance=ExtResource("3_1bvp3")]
+position = Vector2(19, 389)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.11, 0.11)

@@ -1,3 +1,17 @@
-[gd_scene format=3 uid="uid://ca6hn7a80iyh7"]
+[gd_scene load_steps=3 format=3 uid="uid://ca6hn7a80iyh7"]
+
+[ext_resource type="Texture2D" uid="uid://ba50ipn1d1kgt" path="res://pngwing.com-7.png" id="1_bnicd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bnicd"]
+size = Vector2(111, 101)
 
 [node name="Top Player" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.999939, -1.99994)
+scale = Vector2(0.193496, 0.224605)
+texture = ExtResource("1_bnicd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(71.5, -101.5)
+shape = SubResource("RectangleShape2D_bnicd")

@@ -1,0 +1,4 @@
+[gdextension]
+
+library="res://cpp/libgodot-cpp.a"
+entry_symbol="bottomplayer_library_init"
