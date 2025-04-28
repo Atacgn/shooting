@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dohi45ewhto6y"]
+
+[ext_resource type="Texture2D" uid="uid://dfoag8qca45qh" path="res://1137.jpg" id="1_0cutk"]
+
+[node name="Field" type="TextureRect"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_0cutk")
+expand_mode = 3
+stretch_mode = 3
